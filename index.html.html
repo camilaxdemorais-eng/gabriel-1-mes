@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Para Gabriel ❤️</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;width:100%;min-height:100%;background:#090a0f;color:#f7f1f2}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;overflow-x:hidden}
+.page{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px 16px}
+.card{width:min(680px,100%);background:linear-gradient(145deg,#151721,#0e1017);border:1px solid #343641;border-radius:26px;padding:28px 22px;box-shadow:0 20px 70px #000b}
+.center{text-align:center}
+.terminal{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px;line-height:1.8;color:#a7f3c2;text-align:left}
+.dim{color:#89909e}.pink{color:#ff9fb5}
+h1,h2{font-family:Georgia,serif;font-weight:400}
+h1{font-size:clamp(40px,12vw,70px);margin:12px 0}
+h2{font-size:34px;margin:14px 0 20px}
+p{line-height:1.7;font-size:16px}
+.heart{font-size:58px;margin:5px 0 8px;animation:pulse 1.7s ease-in-out infinite}
+@keyframes pulse{50%{transform:scale(1.12)}}
+.btn{display:inline-block;border:1px solid #ff7896;background:#ff78961c;color:white;border-radius:13px;padding:15px 19px;font-family:ui-monospace,monospace;font-size:14px;margin-top:16px;cursor:pointer}
+.btn:active{transform:scale(.97);background:#ff789632}
+.hidden{display:none!important}
+.quote{font:400 25px/1.5 Georgia,serif;color:#ffdce4;margin:26px 0}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin:22px 0}
+.stat{background:#0a0c12;border:1px solid #292d38;border-radius:16px;padding:15px;text-align:left;color:#a4aab5}
+.stat strong{display:block;color:#ffd1da;font-size:18px;margin-top:5px}
+.line{height:3px;background:#292d38;border-radius:5px;margin:25px 0;overflow:hidden}
+.fill{height:100%;width:0;background:#ff7896;transition:width 1s}
+.reveal{opacity:0;transform:translateY(12px);transition:opacity .8s,transform .8s}
+.reveal.on{opacity:1;transform:none}
+.footer{font:11px ui-monospace,monospace;color:#646a75;margin-top:28px}
+#fx{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:20}
+.confetti{position:absolute;top:-30px;animation:drop 3s linear forwards}
+@keyframes drop{to{transform:translateY(115vh) rotate(360deg);opacity:0}}
+@media(max-width:420px){.card{padding:24px 18px}.grid{gap:8px}.stat{padding:13px 10px;font-size:13px}.quote{font-size:23px}}
+</style>
+</head>
+<body>
+<div id="fx"></div>
+
+<div class="page" id="p0">
+<div class="card center">
+<div class="terminal" id="boot"></div>
+<div class="heart">❤️</div>
+<h1>Gabriel.exe</h1>
+<p class="dim">Um pequeno sistema criado especialmente para você.</p>
+<button class="btn" id="start">[ INICIAR SURPRESA ]</button>
+</div>
+</div>
+
+<div class="page hidden" id="p1">
+<div class="card">
+<div class="terminal">> conexão estabelecida<br>> usuário: GABRIEL<br>> módulo: CASAMENTO<br><span class="pink">> status: ONLINE ❤️</span></div>
+<h2>Deploy concluído. 🚀</h2>
+<p class="quote">“Há exatamente um mês, nós fizemos o nosso melhor deploy: uma vida juntos.”</p>
+<p>Dos projetos que eu poderia ter escolhido para a minha vida, você é o que eu quero manter em produção para sempre. ❤️</p>
+<div class="line"><div class="fill" id="fill"></div></div>
+<div class="center"><button class="btn" id="b1">CONTINUAR →</button></div>
+</div>
+</div>
+
+<div class="page hidden" id="p2">
+<div class="card">
+<div class="terminal">> gerando relatório do relacionamento...<br>> análise concluída.</div>
+<h2>RELATIONSHIP v1.0</h2>
+<div class="grid">
+<div class="stat">❤️ Amor<strong>∞</strong></div>
+<div class="stat">😂 Risadas<strong>incontáveis</strong></div>
+<div class="stat">🫂 Abraços<strong>ilimitados</strong></div>
+<div class="stat">🏠 Lar<strong>você + eu</strong></div>
+<div class="stat">🐛 Bugs<strong>em manutenção 😂</strong></div>
+<div class="stat">🔒 Status<strong>FOREVER</strong></div>
+</div>
+<p class="dim">Nota técnica: alguns bugs podem ser resolvidos com beijo. Outros, com pizza.</p>
+<div class="center"><button class="btn" id="b2">ABRIR MENSAGEM ❤️</button></div>
+</div>
+</div>
+
+<div class="page hidden" id="p3">
+<div class="card center">
+<div class="heart">💗</div>
+<h2>Gabriel,</h2>
+<div id="message" class="reveal">
+<p>Talvez você entenda de códigos melhor do que eu, mas existe uma coisa que eu espero que você nunca precise tentar decifrar:</p>
+<p class="quote">eu escolho você.</p>
+<p>Escolho você nos dias fáceis e nos complicados, nas nossas risadas, na rotina, nos planos, nas pequenas discussões e em tudo aquilo que ainda nem vivemos.</p>
+<p>Esse foi só o nosso primeiro mês. Ainda temos uma vida inteira para construir, aprender, errar, rir, sonhar e amar.</p>
+<p class="quote">E eu mal posso esperar para ver todas as próximas versões de nós. ❤️</p>
+<p><strong>Feliz 1 mês de casados, meu amor.</strong></p>
+<p>Com amor,<br><span class="pink">Camila</span></p>
+</div>
+<button class="btn" id="b3">[ EXECUTAR AMOR.EXE ❤️ ]</button>
+</div>
+</div>
+
+<div class="page hidden" id="p4">
+<div class="card center">
+<div class="heart">💍❤️</div>
+<h2>Processo concluído.</h2>
+<p class="quote">Gabriel + Camila</p>
+<p style="color:#a7f3c2">Commit realizado com sucesso.</p>
+<p>⚠️ Não é possível desfazer esta operação.</p>
+<p>Motivo: <strong>amor em execução permanente.</strong></p>
+<h1>∞</h1>
+<p class="dim">dias restantes para amar você.</p>
+<div class="footer">CASAMENTO v1.0 · sem previsão de encerramento</div>
+</div>
+</div>
+
+<script>
+(function(){
+var pages=["p0","p1","p2","p3","p4"], current=0;
+function go(n){
+ document.getElementById(pages[current]).classList.add("hidden");
+ current=n;
+ document.getElementById(pages[current]).classList.remove("hidden");
+ window.scrollTo(0,0);
+ if(current===1)setTimeout(function(){document.getElementById("fill").style.width="100%"},100);
+ if(current===3)setTimeout(function(){document.getElementById("message").classList.add("on")},250);
+}
+document.getElementById("start").onclick=function(){go(1)};
+document.getElementById("b1").onclick=function(){go(2)};
+document.getElementById("b2").onclick=function(){go(3)};
+document.getElementById("b3").onclick=function(){
+ go(4);
+ var fx=document.getElementById("fx");
+ for(var i=0;i<55;i++){
+  var s=document.createElement("span");
+  s.className="confetti";
+  s.textContent=["❤️","💗","✨","♥","✦"][Math.floor(Math.random()*5)];
+  s.style.left=Math.random()*100+"vw";
+  s.style.fontSize=(12+Math.random()*22)+"px";
+  s.style.animationDelay=(Math.random()*1.2)+"s";
+  fx.appendChild(s);
+  setTimeout(function(){if(s.parentNode)s.parentNode.removeChild(s)},4500);
+ }
+};
+var lines=[
+"> inicializando sistema...",
+"> verificando conexão...",
+"> carregando memórias...",
+"> procurando usuário especial...",
+"> usuário encontrado: GABRIEL ❤️",
+"> casamento: ONLINE",
+"> tempo em produção: 1 mês",
+"> preparando surpresa..."
+],i=0;
+function type(){
+ if(i<lines.length){
+  document.getElementById("boot").innerHTML+=lines[i]+"<br>";
+  i++;setTimeout(type,180);
+ }
+}
+type();
+})();
+</script>
+</body>
+</html>
